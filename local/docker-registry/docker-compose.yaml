@@ -1,0 +1,26 @@
+---
+version: '3'
+services:
+  docker-registry:
+    image: docker.io/registry
+    container_name: docker-registry
+    ports:
+      - 5000:5000
+    restart: always
+    volumes:
+      - /docker_data/images:/var/lib/registry
+      - /docker_data/certs:/certs
+    environment:
+      REGISTRY_HTTP_TLS_CERTIFICATE: /certs/domain.crt
+      REGISTRY_HTTP_TLS_KEY: /certs/domain.key
+
+  docker-registry-ui:
+    image: konradkleine/docker-registry-frontend:v2
+    container_name: docker-registry-ui
+    ports:
+      - 8884:80
+      - 443:443
+    environment:
+      ENV_DOCKER_REGISTRY_HOST: 192.168.56.104
+      ENV_DOCKER_REGISTRY_PORT: 5554
+      ENV_DOCKER_REGISTRY_USE_SSL: 1

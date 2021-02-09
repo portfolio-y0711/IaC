@@ -1,0 +1,20 @@
+Ansible plugin
+CloudBees Docker Build and Publish plugin
+Command Agent Launcher Plugin
+Docker
+Docker Pipeline
+docker-build-step
+GitHub Branch Source
+Gitlab API Plugin
+Gitlab Authentication plugin
+Gitlab Hook Plugin
+GitLab Plugin
+Kubernetes Continuous Deploy Plugin
+Kubernetes plugin
+NodeJS
+OWASP Markup Formatter Plugin
+Pipeline
+Pipeline: GitHub Groovy Libraries
+Publish Over SSH
+Timestamper
+WMI Windows Agents Plugin

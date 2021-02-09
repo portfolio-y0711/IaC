@@ -1,0 +1,4 @@
+192.168.56.101 jenkins
+192.168.56.102 gitlab
+192.168.56.103 agent
+192.168.56.104 docker-registry
